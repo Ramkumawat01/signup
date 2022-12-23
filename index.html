@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+   <section>
+    <div class="container">
+        <div class="img-box">
+            <img src="img-log.png" alt="">
+        </div>
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <small class="log">Already a member <a href="#">Log In</a></small>
+
+            <form action="#" method="post">
+                <label for="fname">Full Name</label>
+                <input type="text" name="" id="">
+                <label for="email">E-mail</label>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" name="" id="">
+                <label for="password">Password</label>
+                <i class="fa fa-eye" onclick="toggle()" id="eye"></i>
+                <input type="password" name="" id="pass">
+                <input type="submit" value="Create Account">
+            </form>
+            <small>For more information read our <a href="#">Policies</a> and <br> <a href="#">Terms & condiation.</a> </small>
+        </div>
+    </div>
+   </section>
+
+   <script>
+        function toggle() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById('eye').style.color='#f00';
+            } 
+            else {
+                x.type = "password";
+                document.getElementById('eye').style.color='#000';
+            }
+        }   
+   </script>
+   
+   
+
+</body>
+</html>

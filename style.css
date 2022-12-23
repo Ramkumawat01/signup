@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: orange;
+}
+
+/* section style */
+
+section
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    height: 600px;
+    width: 992px;
+}
+
+/* Image box */
+
+.container .img-box
+{
+    flex: 55%;
+    background: #fff;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.container .img-box img
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+/* Form-box */
+
+.container .form-box
+{
+    flex: 45%;
+    background: #f8f8f8;
+    padding: 50px;
+}
+
+.container .form-box h2
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container .form-box small.log
+{
+    color: #999;
+}
+.container .form-box a
+{
+    text-decoration: none;
+}
+
+/* Form style */
+
+.container .form-box form
+{
+    padding: 20px;
+}
+
+.container .form-box form label
+{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.container .form-box form i.fa
+{
+    float: right;
+    position: relative;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.container .form-box form input
+{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d3d3d3;
+    outline: none;
+    margin-bottom: 15px;    
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.container .form-box form input:focus
+{
+    border: 1px solid orange;
+}
+
+.container .form-box form input[type="submit"]
+{
+    width: 130px;
+    height: 40px;
+    padding: 10px;
+    background: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+/* Media query */
+
+
+@media(max-width:768px)
+{
+    form
+    {
+        width: 100%;
+        padding: 0;
+    }    
+
+    .container 
+    {
+        width: 96%;
+    }
+}
+
+@media (max-width:600px)
+{
+    .container .img-box img
+    {
+        display: none;
+    }
+
+    .container .img-box
+    {
+        flex: 0;
+    }
+
+    .container .form-box
+    {
+        flex: 100%;
+        padding: 15px;
+    }
+}
+
+
+
+
